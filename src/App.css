@@ -15,26 +15,25 @@ body {
 }
 
 .Header {
-  border: 2px solid rgb(17, 190, 37);
   grid-area: Header;
 }
 
 .FilterBar {
-  border: 2px solid rgb(44, 92, 214);
   grid-area: FilterBar;
 }
 
 .Main {
   grid-area: Main;
   border: 2px solid rgb(120, 120, 120);
-  padding: 1rem;
+  padding: 3rem;
 }
 
 .filter-bar {
+  border-radius: 20%;
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   align-items: center;
-  padding: 0.5rem;
+  padding: 2rem;
 }
 
 ul {
@@ -46,7 +45,8 @@ ul {
 }
 
 .property-card {
-  box-shadow: 5px 5px;
+  box-shadow: 3px 3px;
+
   border: 1px solid #ccc;
   padding: 1rem;
   border-radius: 8px;

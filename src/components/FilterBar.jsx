@@ -28,7 +28,7 @@ export default function FilterBar({ initialFilters = {}, onChange }) {
   return (
     <div className="filter-bar">
       <label>
-        location:
+        Where:
         <select value={location} onChange={handleLocationChange}>
           <option value="">All</option>
           <option value="London">London</option>
