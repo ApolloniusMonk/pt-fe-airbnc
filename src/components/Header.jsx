@@ -5,10 +5,10 @@ export default function Header() {
     <div className="Header">
       <Link to="/">
         <button>
-          <img src="../src/images/logo.png" width={110} height={110} />
+          <img src="../src/images/logo.png" width={105} height={105} />
         </button>
       </Link>
-      <h1>Welcome to airbNC!</h1>
+      <h1>Welcome to airbnc!</h1>
     </div>
   );
 }

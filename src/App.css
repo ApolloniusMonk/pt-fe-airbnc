@@ -15,26 +15,46 @@ body {
 }
 
 .Header {
-  border: #397ce8;
+  color: #fc5050;
+  display: flex;
+  border: #941f1f;
   grid-area: Header;
-  align-items: flex-start;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+.Header button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.Header img {
+  display: block;
+  transition: transform 0.2s ease-in-out;
+}
+
+.Header button img:hover {
+  transform: scale(1.08);
 }
 
 .FilterBar {
-  border: 0.5px solid #ccc;
+  border: 0.8px solid #ccc;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
   grid-area: FilterBar;
-  border-radius: 8px;
+  border-radius: 240px;
 }
 
 .Main {
   grid-area: Main;
-  border: 2px solid rgb(120, 120, 120);
+
   padding: 3rem;
 }
 
 .filter-bar {
-  border-radius: 20%;
+  border-radius: 38%;
   display: flex;
   gap: 2rem;
   align-items: center;
@@ -53,7 +73,7 @@ ul {
   box-shadow: 0 5px 5px rgba(1, 1, 1, 0.3);
 
   border: 0.5px solid #ccc;
-  padding: 1rem;
+  padding: 0.5rem;
   border-radius: 10px;
   overflow: hidden;
   text-align: left;
@@ -64,4 +84,14 @@ ul {
   height: 200px;
   object-fit: cover;
   display: block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.property-card img:hover {
+  transform: scale(1.04);
+}
+
+.align-right {
+  text-align: right;
+  font-size: x-large;
 }
