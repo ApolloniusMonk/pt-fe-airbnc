@@ -18,7 +18,7 @@ export default function PropertyCard({ property }) {
       <p>£{property.price_per_night} Per Night </p>
       <p>{property.location}</p>
       <p>Host: {property.host}</p>
-      <p class="align-right">♡</p>
+      <p className="align-right">♡</p>
     </li>
   );
 }
