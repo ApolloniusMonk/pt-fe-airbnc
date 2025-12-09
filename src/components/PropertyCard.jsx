@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 export default function PropertyCard({ property }) {
   const firstImage = property.images?.[0];
 
+  console.log(property);
   return (
     <li className="property-card">
       <Link to={`/property/${property.property_id}`}>
@@ -18,7 +19,9 @@ export default function PropertyCard({ property }) {
       <p>£{property.price_per_night} Per Night </p>
       <p>{property.location}</p>
       <p>Host: {property.host}</p>
-      <p className="align-right">♡</p>
+      <button>
+        <p className="favourite">♡</p>
+      </button>
     </li>
   );
 }

@@ -18,6 +18,8 @@ export default function PropertyPage() {
   if (isLoading) return <p>Loading...</p>;
   if (!property) return <p>Property not found.</p>;
 
+  console.log(property);
+
   return (
     <div>
       <div className="image-gallery">
