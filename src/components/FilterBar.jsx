@@ -25,7 +25,7 @@ export default function FilterBar({ initialFilters = {}, onChange }) {
   return (
     <div className="filter-bar">
       <label>
-        Price range:
+        Price :
         <select value={priceRange} onChange={handlePriceChange}>
           <option value="any">Any</option>
           <option value="0-100">£0 - £100</option>
@@ -35,7 +35,7 @@ export default function FilterBar({ initialFilters = {}, onChange }) {
       </label>
 
       <label>
-        Property Type:
+        Property Type :
         <select value={propertyType} onChange={handlePropertyType}>
           <option value="any">Any</option>
           <option value="Apartment">Apartment</option>

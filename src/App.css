@@ -15,6 +15,7 @@ body {
 }
 
 .Header {
+  color: #ed2222;
   display: flex;
   grid-area: Header;
   align-items: center;
@@ -38,12 +39,12 @@ body {
   transform: scale(1.08);
 }
 
-.FilterBar {
+/* .FilterBar {
   border: 0.8px solid #ccc;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
   grid-area: FilterBar;
   border-radius: 240px;
-}
+} */
 
 .Main {
   grid-area: Main;
@@ -52,11 +53,15 @@ body {
 }
 
 .filter-bar {
-  border-radius: 38%;
+  border: 0.8px solid #ccc;
+  border-radius: 40px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
   display: flex;
   gap: 2rem;
   align-items: center;
   padding: 2rem;
+  width: 70%;
+  margin: auto;
 }
 
 ul {
