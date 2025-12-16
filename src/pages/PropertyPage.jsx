@@ -22,15 +22,19 @@ export default function PropertyPage() {
 
   return (
     <div>
+      <h1>
+        <div className="property-name">{property.property_name}</div>
+      </h1>
+
       <div className="image-gallery">
         {property.images.map((img, i) => (
           <img key={i} src={img} alt={`Image ${i}`} />
         ))}
       </div>
-      <h2>{property.property_name}</h2>
+
       <p>{property.location}</p>
       <p>£{property.price_per_night}/night</p>
-      <p>Hosted by: {property.host}</p>
+      <p>Host: {property.host}</p>
     </div>
   );
 }

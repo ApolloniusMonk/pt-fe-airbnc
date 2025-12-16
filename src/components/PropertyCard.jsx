@@ -15,13 +15,13 @@ export default function PropertyCard({ property }) {
           />
         )}
       </Link>
-      <p>
+      <div className="property-type">
         {property.property_type} in {property.location.split(",")[0]}
-      </p>
+      </div>
 
       <p>{property.property_name}</p>
-      <p>{property.host} (Host)</p>
-      <p>£{property.price_per_night} for one night </p>
+      <p>Host: {property.host} </p>
+      <p>£{property.price_per_night * 2} for 2 nights </p>
     </li>
   );
 }

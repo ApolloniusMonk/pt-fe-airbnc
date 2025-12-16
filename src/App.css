@@ -5,7 +5,7 @@ body {
 .App {
   width: 100vw;
   height: 100vh;
-  text-align: center;
+  text-align: left;
   display: grid;
   grid-template-rows: 100px 1fr;
   grid-template-areas:
@@ -49,10 +49,11 @@ body {
 .Main {
   grid-area: Main;
 
-  padding: 3rem;
+  padding: 1rem;
 }
 
 .filter-bar {
+  position: relative;
   border: 0.8px solid #ccc;
   border-radius: 40px;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
@@ -64,6 +65,14 @@ body {
   margin: auto;
 }
 
+.filter-bar::after {
+  content: "";
+  display: block;
+  margin-top: 1rem;
+  height: 1px;
+  background-color: #b4afaf;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -73,11 +82,11 @@ ul {
 }
 
 .property-card {
-  /* box-shadow: 0 5px 5px rgba(1, 1, 1, 0.3); */
-
-  /* border: 0.5px solid #ccc; */
-  /* padding: 0.5rem;
-  border-radius: 10px; */
+  font-family: "Helvetica Neue";
+  width: auto;
+  max-width: 27rem;
+  font-size: 0.9rem;
+  padding-bottom: 1rem;
   overflow: hidden;
   text-align: left;
 }
@@ -85,14 +94,23 @@ ul {
 .property-card img {
   border-radius: 10px;
   width: 100%;
-  height: 200px;
+  height: auto;
   object-fit: cover;
   display: block;
   transition: transform 0.3s ease-in-out;
 }
 
 .property-card img:hover {
-  transform: scale(1.04);
+  transform: scale(1.02);
+}
+
+.property-type {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: 450;
+  padding-top: 0.5rem;
+  padding-right: 0.2rem;
 }
 
 .image-gallery {
@@ -132,7 +150,7 @@ ul {
 
 .image-gallery img {
   scroll-snap-align: start;
-  width: 60%;
+  width: 58%;
   height: auto;
   align-items: center;
   border-radius: 10px;
@@ -142,4 +160,11 @@ ul {
   .image-gallery img {
     flex: 0 0 100%;
   }
+}
+
+.property-name {
+  font-family: "Helvetica Neue";
+  font-weight: 435;
+  font-size: 40px;
+  text-align: left;
 }
