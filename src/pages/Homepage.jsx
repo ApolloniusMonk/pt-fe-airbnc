@@ -1,9 +1,9 @@
 import PropertyList from "../components/PropertyList";
 
-export default function Homepage({ properties }) {
-  return (
-    <main>
-      <PropertyList properties={properties} />
-    </main>
-  );
+import Skeleton from "../components/Skeleton";
+
+export default function Homepage({ properties, isLoading }) {
+  if (isLoading) return <Skeleton />;
+
+  return <PropertyList properties={properties} />;
 }
